@@ -14,18 +14,23 @@ I created this iOS example by following this excellent [Twitter API integration 
 
 ## Installation
 
-This example utilizes the following third-party frameworks, installed via [CocoaPods](https://cocoapods.org/):
+1. Run `git clone https://github.com/markjeschke/TweetSearch.git` or download the [zip](https://github.com/markjeschke/TweetSearch.git) to your local drive.
+2. If you have CocoaPods already installed, simply open the `TweetSearch.xcworkspace` source, and deploy the app to your iPhone or iPad. It unfortunately doesn't access the Twitter data via the iOS simulator. But, that could be a weird bug on my end.
+
+#### If you don't have CocoaPods installed, please follow these directions:
+
+1. Within Terminal, enter `$ sudo gem install cocoapods` in the command line.
+2. Change directory, so that it's pointing to the root directory of this "TweetSearch" Xcode project. 
+3. Run `pod install` to install the pods that are listed in the Podfile.
+4. Once the installation has completed, open the project by clicking to open `TweetSearch.xcworkspace` – not the `TweetSearch.xcodeproj`.
+
+#### Note: If you're having trouble installing CocoaPods, please refer to their [installation instructions](https://cocoapods.org/#install).
+
+This example utilizes the following third-party frameworks via [CocoaPods](https://cocoapods.org/):
 
 * [SDWebImage](https://github.com/rs/SDWebImage) - by [Olivier Poitrey](https://github.com/rs)
 * [TTTAttributedLabel](https://github.com/TTTAttributedLabel/TTTAttributedLabel) - by [Mattt Thompson](https://github.com/mattt)
 * [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD) - by [Sam Vermette](https://github.com/samvermette) 
 * [SVPullToRefresh](https://github.com/samvermette/SVPullToRefresh) - by Pull-to-refresh + infinite Scrolling by [Sam Vermette](https://github.com/samvermette)
-
-Please follow these steps to install the Pods correctly:
-
-1. If you don't have CocoaPods installed on your computer, launch Terminal and enter `$ sudo gem install cocoapods` in the command line.
-2. Change directory, so that it's pointing to the root directory of this "TweetSearch" Xcode project. 
-3. Run `pod install` to install the pods that are listed in the Podfile.
-4. Once the installation has completed, open the project by clicking to open `TweetSearch.xcworkspace` – not the `TweetSearch.xcodeproj`.
 
 
